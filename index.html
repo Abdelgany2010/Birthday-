@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise 🎂</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="background-glow glow-one"></div>
+<div class="background-glow glow-two"></div>
+<div id="particles"></div>
+
+<section id="openingScreen" class="opening-screen">
+  <div class="opening-content">
+    <div class="gift-icon">🎁</div>
+    <p id="openingSmallText" class="opening-small-text"></p>
+    <h1 id="openingName"></h1>
+    <p id="openingDescription" class="opening-description"></p>
+    <button id="openGiftBtn" class="primary-button">Open Your Gift <span>→</span></button>
+  </div>
+</section>
+
+<main id="mainContent" class="main-content">
+  <section class="hero section">
+    <div class="balloon balloon-one">🎈</div>
+    <div class="balloon balloon-two">🎈</div>
+    <div class="balloon balloon-three">🎈</div>
+    <div class="balloon balloon-four">🎈</div>
+    <div class="hero-content">
+      <div class="birthday-badge">🎂 Birthday Celebration</div>
+      <p class="hero-small">Today is all about</p>
+      <h1 id="birthdayTitle"></h1>
+      <h2 id="birthdayName"></h2>
+      <p id="birthdaySubtitle" class="hero-description"></p>
+      <div class="age-container">
+        <span class="age-number" id="birthdayAge"></span>
+        <span class="age-text">Years</span>
+      </div>
+      <div class="scroll-indicator"><span>Scroll to explore</span><div class="scroll-arrow">↓</div></div>
+    </div>
+  </section>
+
+  <section class="cake-section section">
+    <div class="section-header">
+      <span id="cakeLabel" class="section-label"></span>
+      <h2 id="cakeTitle"></h2>
+      <p id="cakeDescription"></p>
+    </div>
+    <div class="cake-container">
+      <div class="candles">
+        <div class="candle"><div class="flame"></div></div>
+        <div class="candle"><div class="flame"></div></div>
+        <div class="candle"><div class="flame"></div></div>
+      </div>
+      <div class="cake">
+        <div class="cake-top"></div>
+        <div class="cake-middle"></div>
+        <div class="cake-bottom"></div>
+      </div>
+    </div>
+    <button id="wishBtn" class="secondary-button">✨ Make a Wish</button>
+  </section>
+
+  <section class="messages-section section">
+    <div class="section-header">
+      <span id="messagesLabel" class="section-label"></span>
+      <h2 id="messagesTitle"></h2>
+      <p id="messagesDescription"></p>
+    </div>
+    <div id="messagesContainer" class="messages-grid"></div>
+  </section>
+
+  <section class="gallery-section section">
+    <div class="section-header">
+      <span id="galleryLabel" class="section-label"></span>
+      <h2 id="galleryTitle"></h2>
+      <p id="galleryDescription"></p>
+    </div>
+    <div id="galleryContainer" class="gallery-grid"></div>
+  </section>
+
+  <section class="final-section section">
+    <div class="final-card">
+      <div class="final-icon">✨</div>
+      <span class="section-label">ONE LAST THING</span>
+      <h2 id="finalTitle"></h2>
+      <p id="finalMessage"></p>
+      <div id="finalSignature" class="final-signature"></div>
+    </div>
+  </section>
+
+  <button id="musicButton" class="music-button">
+    <span id="musicIcon">🎵</span><span id="musicText">Music</span>
+  </button>
+
+  <footer class="footer">
+    <p>Made with ❤️ for a special birthday</p><span>✨</span>
+  </footer>
+</main>
+
+<audio id="birthdayMusic" loop preload="auto"></audio>
+<div id="confettiContainer"></div>
+
+<div id="lightbox" class="lightbox">
+  <button id="closeLightbox" class="close-lightbox">×</button>
+  <img id="lightboxImage" src="" alt="Birthday memory">
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
