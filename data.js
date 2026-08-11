@@ -27,12 +27,11 @@ const birthdayData = {
   },
 
   photos: [
-    "assets/Photos/photo1.jpg",
-    "assets/Photos/photo2.jpg",
-    "assets/Photos/photo3.jpg"
-    "assets/Photos/photo4.jpg"
-  ],
-
+  "assets/Photos/photo1.jpg",
+  "assets/Photos/photo2.jpg",
+  "assets/Photos/photo3.jpg",
+  "assets/Photos/photo4.jpg"
+],
   messages: [
     {
       name: "Ahmed",
